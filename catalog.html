@@ -12,8 +12,10 @@
         <a href="index.html">
             <img src="img/logo-technomart.svg" alt="Логотип техномарт">
         </a>
-        <label for="name">Поиск:</label>
-        <input type="text" name="search" id="filter-search">
+        <form>
+            <label for="name">Поиск:</label>
+            <input type="text" name="search" id="filter-search">
+        </form>
         <ul>
             <li><a href="#">Закладки:0</a></li>
             <li><a href="#">Корзина</a></li>
@@ -58,7 +60,8 @@
             <form class="filter" method="get">
                 <fieldset>
                     <legend>Цена:</legend>
-                    <input type="number" min="0" max="30000">
+                    <input type="text" value="0">
+                    <input type="text" value="30000">
                 </fieldset>
                 <fieldset>
                     <legend>Производители:</legend>
@@ -72,25 +75,25 @@
                         <li>
                             <input type="checkbox" name="interskol" id="filter-interskol">
                             <label for="filter-interskol">
-                                интерскол
+                                Интерскол
                             </label>
                         </li>
                         <li>
                             <input type="checkbox" name="makita" id="filter-makita" checked>
                             <label for="filter-makita">
-                                makita
+                                Makita
                             </label>
                         </li>
                         <li>
                             <input type="checkbox" name="dewalt" id="filter-dewalt">
                             <label for="filter-dewalt">
-                                dewalt
+                                Dewalt
                             </label>
                         </li>
                         <li>
                             <input type="checkbox" name="hitachi" id="filter-hitachi">
                             <label for="filter-hitachi">
-                                hitachi
+                                Hitachi
                             </label>
                         </li>
                     </ul>
